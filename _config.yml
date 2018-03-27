@@ -19,7 +19,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://SeongJaeMoon.github.io" # the base hostname & protocol for your site
+url: "https://seongjaemoon.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpeg"
 logo: "/assets/logo.png"
 
@@ -215,6 +215,6 @@ protocols:
 
     twitter_image: "/assets/logo.png"
 
-    os_repo: ""
+    os_repo: "https://seongjaemoon.github.io"
     os_rcs_type: "git"
     os_src: "https://github.com/SeongJaeMoon/SeongjaeMoon.github.io.git"
