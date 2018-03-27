@@ -13,7 +13,7 @@ tags:   Python 파이썬 자료형 문법 Atom Java
 우선 파이썬은 네덜란드의 **천재** 개발자 귀도 반 로섬이 개발을 시작한 언어로 인터프리터 모드로 동작한다. 직관적이고 가독성 좋은 키워드들과 많은 양의 표준 라이브러리 지원 및 여러 갓 개발자들이 개발한 다양한 서드 파티 라이브러리 덕분에 프로그래밍 언어를 처음 배우는 입문자에게 많이 권하는 프로그래밍 언어라고 할 수 있다. ~~난 왜 대학에서 배우지 않았는가..~~ 그렇다면 거두절미하고, 왜 그렇게 강력하고 빠르게 배울 수 있다고 표현하는지 정리해보도록 하자.
 
 ## 파이썬 설치 및 아톰 에디터 준비
-![파이썬 다운로드 홈페이지](/assets/uploads/python/python1/pythonDownload.png)
+![파이썬 다운로드 홈페이지](/assets/uploads/python/python1/pythondownload.png)
 우선, [여기서](https://www.python.org/downloads/) 파이썬 3 버전을 OS에 맞게 다운로드 받는다. 파이썬을 다운로드 받고나면 IDLE를 비롯한 여러가지 파일들이 함께 설치된다. 만약 IDLE가 아닌 다른 에디터에서 파이썬 코딩을 하기 위해선 환경 변수를 설정 해주어야 한다.
 
 - Windows
@@ -63,10 +63,10 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 리눅스는 Add/Remove 관리자를 실행해서 파이썬을 찾아서 다운로드해주면 된다. 설치와 관련된 더 자세한 내용은 [여기](https://juehan.github.io/DiveIntoPython3_Korean_Translation/installing-python.html#macosx)를 참고하자.
 
-![아톰 다운로드](/assets/uploads/python/python1/atomDownload.png)
+![아톰 다운로드](/assets/uploads/python/python1/atomdownload.png)
 - 파이썬 코딩을 원할하게 진행하기 위해 Atom [사이트](https://atom.io/)에서 아톰 에디터를 다운로드 받는다.
 
-![아톰에서 사용할 파이썬 개발용 패키지 다운로드](/assets/uploads/python/python1/scriptDownload.png)
+![아톰에서 사용할 파이썬 개발용 패키지 다운로드](/assets/uploads/python/python1/scriptdownload.png)
 - 아톰 에디터를 다운로드 받았다면, Install a Package 에서 script와 autocomplete-python 패키지를 다운로드 받는다.
 ```python
 print("hello world")
