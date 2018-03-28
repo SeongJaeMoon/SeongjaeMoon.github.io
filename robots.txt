@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://seongjaemoon.github.io/sitemap.xml
