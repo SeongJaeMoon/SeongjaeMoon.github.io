@@ -34,7 +34,7 @@ highlightjs_theme: "monokai-sublime"
 jekyll-archives:
   enabled:
     - categories
-    # - tags
+    - tags
 
   layout: 'archive'
   permalinks:
