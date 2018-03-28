@@ -219,7 +219,7 @@ else :
 ```python
 a = 7
 b = a == 7 and 'good' or 'not good'  # good
-b = a if a == 7 else a # good
+b = 'good' if a == 7 else 'not good' # good
 ```
 ```java
 int a = 7;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Oracle 조인 쿼리 및 스키마 정리"
+title:  "Oracle 뷰"
 date:   2018-02-18 23:00:00
 author: Seongjae Moon
 categories: DB
