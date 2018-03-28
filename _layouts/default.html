@@ -2,17 +2,18 @@
 <html>
   
   {% include head.html %}
-
+  
   <body>
     
     {% include header.html %}
-
     <div class="page-content">
-        {{ content }}
+     
+          {{ content }}
+          {% include ad.html %}   
     </div>
-
+    
     {% include footer.html %}
-
+    
   </body>
 
 </html>
