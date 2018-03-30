@@ -128,7 +128,7 @@ U  V  W  X  Y
 
 이렇게 해서 간단하게 Boggle Game에 대해 알아보았다. 책에선 난이도가 '하'로 적혀있는 나름 쉬운..? 알고리즘에 속하는 완전탐색 관련 알고리즘 문제이다. 역시 세상사 쉽지 않다.
 
-계속해서 [다음](https://seongjaemoon.github.io/2018/02/09/algorithmPicnic/)은 소풍 문제를 풀어 보는걸로~
+계속해서 [다음](https://seongjaemoon.github.io/algorithm/2018/02/09/algorithmPicnic.html)은 소풍 문제를 풀어 보는걸로~
 
 * 오타나 잘못된 부분을 지적 해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * 참고문헌<br>

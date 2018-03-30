@@ -45,7 +45,7 @@ highlightjs_theme: "monokai-sublime"
 disqus_shortname: Moon
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-116605161-1"
 
 # Category descriptions (for archive pages)
 descriptions:
@@ -54,16 +54,16 @@ descriptions:
 
   - cat: Algorithm
     desc: "알고리즘 공부를 위한 공간입니다."
-   
+
   - cat: Git
     desc: "Git과 Github에 관련된 공부 일지입니다."
 
-  - cat: DB
+  - cat: Database
     desc: "오라클, MySQL, 클라우드 데이터베이스 관련 공부 일지입니다."
 
   - cat: Python
     desc: "파이썬을 이용한 데이터 분석 및 크롤링 프로젝트 공부 일지입니다."
-  
+
   - cat: Network
     desc: "네트워크 관련 공부 일지입니다."
 
@@ -71,7 +71,7 @@ descriptions:
     desc: "IoT와 관련된 다양한 공부 일지입니다."
 
   - cat: MyStory
-    desc: "개인적인 사생활과 관련된 공간입니다 :)" 
+    desc: "개인적인 사생활과 관련된 공간입니다 :)"
 
   - cat: Book
     desc: "좋은 책과 좋은 구절 등을 기록으로 남기기 위한 공간입니다."
@@ -208,7 +208,7 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/logo.png"  
+    fb_image: "/assets/logo.png"
     fb_image_width: 612
     fb_image_height: 605
     fb_image_type: "image/png"

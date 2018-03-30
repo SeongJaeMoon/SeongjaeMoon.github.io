@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle 제약 조건 및 DDL, DML, DCL"
 date:   2018-02-03 23:00:00
 author: Seongjae Moon
-categories: DB
+categories: Database
 tags:   Oracle 오라클 DDL DCL DML
 ---
 
-2018년 올 해도 벌써 1월이 다 가버렸다. 이럴수가.. 2월의 첫 주말을 맞아 오늘은 그 동안 못 했던 개인적인 공부와 블로그 포스팅을 열심히 해봐야겠다. [저번 포스팅](https://seongjaemoon.github.io/2018/01/27/database-oracle3/)에 이어서 오늘은 DB 제약 조건 및 DDL, DML, DCL에 대해 알아보자.
+2018년 올 해도 벌써 1월이 다 가버렸다. 이럴수가.. 2월의 첫 주말을 맞아 오늘은 그 동안 못 했던 개인적인 공부와 블로그 포스팅을 열심히 해봐야겠다. [저번 포스팅](https://seongjaemoon.github.io/database/2018/01/27/database-oracle3.html)에 이어서 오늘은 DB 제약 조건 및 DDL, DML, DCL에 대해 알아보자.
 
 우선, 데이터베이스에 저장되는 것들은 테이블 외에 기타 여러 가지 것들이 저장되는데 이것을 데이터베이스 객체(Database Object)라고 부른다. 테이블의 제약 조건 등이 함께 저장 되는 것을 생각하면 되겠다. 그렇다면, DDL에 대해 알아보자.
 
@@ -336,7 +336,7 @@ ON 객체명(테이블명) FROM 계정명;
 
 내용이 많이 부실하지만, 다음 포스팅에서 더 보완해보자.. ~~귀차니즘..~~
 
-[다음 포스팅](https://seongjaemoon.github.io/2018/02/18/database-oracle5/)에선 뷰와 오라클 정리를 해보는 걸로~
+[다음 포스팅](https://seongjaemoon.github.io/database/2018/02/18/database-oracle5.html)에선 뷰와 오라클 정리를 해보는 걸로~
 
 * 오타나 잘못된 부분을 지적 해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * 참고문헌<br>

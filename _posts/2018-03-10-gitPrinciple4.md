@@ -7,7 +7,7 @@ categories: Git
 tags:   Git Github GitKraken 크라켄
 ---
 
-오랜만에 Git과 관련된 포스팅! Github를 통한 코드 관리와 풀 리퀘스트를 통한 개발자들 간의 코드 리뷰를 진행 하는 기초적인 부분에 대해 [리뷰](https://seongjaemoon.github.io/2017/12/01/gitPrinciple/)를 진행 했었다.
+오랜만에 Git과 관련된 포스팅! Github를 통한 코드 관리와 풀 리퀘스트를 통한 개발자들 간의 코드 리뷰를 진행 하는 기초적인 부분에 대해 [리뷰](https://seongjaemoon.github.io/git/2017/12/01/gitPrinciple.html)를 진행 했었다.
 
 git bash를 이용해서 add > commit > push라는 기본적인 패턴에 대해 다뤄보았는데, 오늘은 SourceTree나 Kraken과 같이 bash창에서 하나하나 명령어를 입력해야 되는 번거러움을 덜어주는 GUI 툴 중에 크라켄이라기 보다는 오징어?에 가까운 크라켄 프로그램에 대해 간단하게 알아보고자 한다.
 

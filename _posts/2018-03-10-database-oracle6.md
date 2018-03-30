@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle + Docker + OJDBC"
 date:   2018-02-18 23:00:00
 author: Seongjae Moon
-categories: DB
+categories: Database
 tags:   Oracle 오라클 Docker OJDBC JAVA
 ---
 
-[저번 포스팅](https://seongjaemoon.github.io/2018/02/18/database-oracle5/)을 통해 오라클의 간단한 쿼리문에 대해서 알아보았다. 오라클은 RDMBS 중에서도 진짜 잘 만들어진 DBMS로서 다양한 기능을 제공하고 있다. 검색 쿼리 최적화라던지 이런 저런 기능들은 너무 종류가 많아서 다 정리하기 벅차므로 API 문서 등을 열심히 찾아보는 걸로 하고, Oracle 11g와 OJDBC를 통해 JAVA 환경에서 실제 데이터베이스를 활용하는 방법에 대해서 정리하고자 한다.  
+[저번 포스팅](https://seongjaemoon.github.io/database/2018/02/18/database-oracle5.html)을 통해 오라클의 간단한 쿼리문에 대해서 알아보았다. 오라클은 RDMBS 중에서도 진짜 잘 만들어진 DBMS로서 다양한 기능을 제공하고 있다. 검색 쿼리 최적화라던지 이런 저런 기능들은 너무 종류가 많아서 다 정리하기 벅차므로 API 문서 등을 열심히 찾아보는 걸로 하고, Oracle 11g와 OJDBC를 통해 JAVA 환경에서 실제 데이터베이스를 활용하는 방법에 대해서 정리하고자 한다.  
 
 여기서 Docker라는 친구가 필요한데, 그 이유는 Mac OS에서는 오라클을 지원하지 않기 때문이다. 이러한 이유로 가상 머신을 통해 돌리거나 다른 DBMS를 활용해서 개발해야 한다. Windows나 Linux 등 다른 운영체제를 사용하는 사용자는 오라클을 다운로드 받고 오라클 서버를 바로 실행하면 된다.
 
@@ -19,7 +19,7 @@ Windows, Linux 운영체제에서 사용하기 위해선 [여기](http://www.ora
 
 Mac OS에서 사용하기 위해선 Docker를 이용해 별도로 오라클 이미지를 사용해 연동을 진행해야 한다. 우선, Docker라는 친구를 [여기](https://www.docker.com/docker-mac)에서 다운로드 받는다. Docker 정보에 대해선 [여기](https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html)에 아주 잘 정리 되어 있으니 참고하자.
 
-![Docker 실행](//assets/uploads/docker.png)
+![Docker 실행](/assets/uploads/docker.png)
 Docker를 다운로드 받고 실행을 하면, 상태바에 고래 모양을 띈 귀여운 친구가 나타난 것을 확인할 수 있다. 고래 모양을 클릭한 후 Docker is running 이라는 창이 확인되면 준비가 완료된다.
 
 이제 터미널을 열고 아래 명령어를 작성해준다. 이렇게 명령어를 작성하면 Docker 컨테이너 Oracle 11g 이미지를 내려받는다.
@@ -35,7 +35,7 @@ docker run -d -p 59160:22 -p 59161:1521 wnameless/oracle-xe-11g
 많은 사람들이 SQL 쿼리를 작성하고 DB를 관리하기 위해 애용하는 GUI 프로그램인 SQL developer를 [여기](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)에서 운영체제에 맞게 다운로드 하고 실행한다.
 
 처음 SQL developer를 실행하면 아래와 같은 화면이 나타나게 된다. 현재 과정에선 관리자로 접속하는 것이니 초기 아이디는 system로 비밀번호는 oracle로 되어있다. 이 접속 아이디와 비밀번호로 접속이 이루어지게 된다.
-![오라클 접속 설정](//assets/uploads/sqldev.png)
+![오라클 접속 설정](/assets/uploads/sqldev.png)
 
 ##### OJDBC를 다운로드 받는다.
 오라클을 JAVA 개발 환경에서 사용하기 위한 인터페이스 라이브러리로 ojdbc6.jar 파일을 [여기](http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html)에서 다운로드 한다.
@@ -43,7 +43,7 @@ docker run -d -p 59160:22 -p 59161:1521 wnameless/oracle-xe-11g
 ojdbc6.jar를 사용하기 위해서 빌드 경로 설정을 해주어야 한다. Project Explorer에서 해당 프로젝트를 우클릭해서 Build Path > Configure Build Path... > Libraries > Add External JARs...를 순서대로 누르고, 다운로드 받은 ojdbc6.jar를 선택한 후 Apply 해준다.
 
 정상적으로 작업이 이루어지면 아래와 같이 ojdbc.jar가 외부 라이브러리에 추가된다.
-![ojbc.jar연결](//assets/uploads/ojdbc6.png)
+![ojbc.jar연결](/assets/uploads/ojdbc6.png)
 
 - 가끔 Git과 연동하는 도중에 이 빌드 경로 설정 문제 때문에 에러가 발생하곤 한다. 그럴 땐 기존의 ojdbc.jar 파일을 삭제하고 다시 설정 해주면 된다.
 
@@ -85,7 +85,9 @@ public class SQLConnection {
 	}
 }
 ```
+
 - 아래 코드는 학생 정보 관리용 DAO 클래스에서 회원 정보를 가져오는 간단한 코드의 예이다.
+
 ```java
 package com.sistmng.student;
 
@@ -161,10 +163,11 @@ public class StudentDAO {
   }
 }
 ```
+
 - 위와 같이 DAO 클래스에서 DB의 CRUD 작업을 구성하고, 서비스 클래스나 다른 클래스에서 DAO 클래스의 메소드를 호출해서 사용하면 된다.  
 #### 3. 오라클 DB 확인.
 SQL developer를 통해 오라클 DB의 CRUD 작업을 진행할 수 있으며, 쿼리문을 이리 저리 날려볼 수 있다. 이클립스에선 자바 코드만을 컨트롤하여 적절한 분업?이 가능해졌다!
-![SQL developer SELECT 쿼리 테스트](//assets/uploads/sqldev2.png)
+![SQL developer SELECT 쿼리 테스트](/assets/uploads/sqldev2.png)
 
 처음 대학에서 Oracle 데이터베이스를 접했을 때는 가상 머신 위에서 오라클을 구동하고, 윈도우 프롬프트 창에서 열심히 한줄 한줄 정성스레? 코드를 작성했었던 기억이 난다. 세상이 점점 좋아지고 있다는 걸 실감한다... ~~갑자기?~~
 

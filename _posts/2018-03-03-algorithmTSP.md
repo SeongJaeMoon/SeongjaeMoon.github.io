@@ -12,7 +12,7 @@ tags:   여행하는외판원문제 알고리즘 Traveling-Salesman-Problem Java
 책에서는 C++를 이용해서 코딩하지만, 스터디를 위해 사용하기로 한 언어가 JAVA이기 때문에 코드는 JAVA로 작성되었으며, 책의 내용을 나름대로 재구성하여 작성하였다.
 
 ### 먼저, 여행하는 외판원 문제(TSP)에 대해서 알아보자.
-우선, 여행하는 외판원 문제는 최적화 문제이다. 최적화 문제란 앞서 살펴 봤던, [게임판 덮기](https://seongjaemoon.github.io/2018/02/18/algorithmBoardCover/)나 [소풍](https://seongjaemoon.github.io/2018/02/09/algorithmPicnic/)같은 문제와는 달리 문제의 답이 하나가 아니라 여러 개이고, 그 중에서 어떤 기준에 따라 가장 **'좋은'** 답을 찾아 내는 문제이다. 문제의 이름에서 느껴지듯, 여행과 관련된 경로 계산 문제라는 것을 억지스럽게? 추측해볼 수 있다.
+우선, 여행하는 외판원 문제는 최적화 문제이다. 최적화 문제란 앞서 살펴 봤던, [게임판 덮기](https://seongjaemoon.github.io/algorithm/2018/02/18/algorithmBoardCover.html)나 [소풍](https://seongjaemoon.github.io/algorithm/2018/02/09/algorithmPicnic.html)같은 문제와는 달리 문제의 답이 하나가 아니라 여러 개이고, 그 중에서 어떤 기준에 따라 가장 **'좋은'** 답을 찾아 내는 문제이다. 문제의 이름에서 느껴지듯, 여행과 관련된 경로 계산 문제라는 것을 억지스럽게? 추측해볼 수 있다.
 
 ### 예를 들어보자.
 ![경로 찾기 예시](/assets/uploads/algorithm/tsp.png)
@@ -114,7 +114,7 @@ public class TSP {
 
 외판원 문제(traveling salesperson problem) 또는 순회 외판원 문제는 조합 최적화 문제의 일종이다. 이 문제는 NP-난해에 속하며, 흔히 계산 복잡도 이론에서 해를 구하기 어려운 문제의 대표적인 예로 많이 다룬다고 한다.([위키 피디아 참고](https://ko.wikipedia.org/wiki/%EC%99%B8%ED%8C%90%EC%9B%90_%EB%AC%B8%EC%A0%9C))
 
-역시 알고리즘 문제는 너무 어렵지만 하나하나 배워가는 재미가 쏠쏠한 것 같다. 오늘도 알고리즘의 매력에 감탄하며 다음은 책의 완전탐색 마지막 문제! [시계 맞추기](https://seongjaemoon.github.io/2018/03/06/algorithmBoardCover/)를 포스팅 해보는 걸로~  
+역시 알고리즘 문제는 너무 어렵지만 하나하나 배워가는 재미가 쏠쏠한 것 같다. 오늘도 알고리즘의 매력에 감탄하며 다음은 책의 완전탐색 마지막 문제! [시계 맞추기](https://seongjaemoon.github.io/algorithm/2018/03/06/algorithmBoardCover.html)를 포스팅 해보는 걸로~  
 
 
 * 오타나 잘못된 부분을 지적해주시면 감사히 생각하고 수정토록 하겠습니다 :)

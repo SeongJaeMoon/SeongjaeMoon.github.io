@@ -13,7 +13,7 @@ Github를 통해 자신만의 repository를 구성하고 소스코드의 백업�
 
 ### 1. Git 기본 사용 루틴
 
-[전 포스팅](https://seongjaemoon.github.io/2017/12/01/gitPrinciple/)에서 알아봤듯이, 우리가 저장소를 새로 만들고 저장소에 저장하는 과정은 크게 4가지 단계를 거치는 것을 알 수 있었다.
+[전 포스팅](https://seongjaemoon.github.io/git/2017/12/01/gitPrinciple.html)에서 알아봤듯이, 우리가 저장소를 새로 만들고 저장소에 저장하는 과정은 크게 4가지 단계를 거치는 것을 알 수 있었다.
 
 ##### 저장소 생성 > add (스테이징 영역)> commit (원격 저장소에 올릴 준비)> push (원격 저장소에 올리기)
 내 로컬 영역에 작업을 진행하고 커밋까지 진행한 후, 푸쉬를 통해 실제 원격 저장소에 저장한다는 단순한?루틴이다. 여기서 스테이징 영역이란, 작업디렉터리에 변경부분만 따로 임시로 저장하는 공간이라 생각하면 되겠다.
@@ -75,13 +75,13 @@ Comparing changes 화면이 나타나면 Create pull request를 클릭하여 새
 ### 3. 변경사항 로컬에 적용하기
 이제 중앙 원격 저장소에 저장된 내용과 내 로컬 저장소에 내용을 합쳐 최종 변경본을 가지고 추가 작업을 해야한다.  
 ```bash
-$ git pull --rebase origin master //git pull 명령으로 중앙 저장소의 변경 이력 로컬 저장소로 내려 받기 
+$ git pull --rebase origin master //git pull 명령으로 중앙 저장소의 변경 이력 로컬 저장소로 내려 받기
 ```
 위의 rebase 옵션 없이 쓸 수도 있지만, 불필요한 병합 커밋을 한 번 더해야 하는 번거로움이 있으므로, rebase 옵션을 쓰는 것이 좋다. merge와 rebase에 대한 더 자세한 내용은 [여기](https://backlog.com/git-tutorial/kr/stepup/stepup1_4.html)를 참고.
 
 여기서 살펴본 내용은 지극히 작업이 정상적으로 이루어졌을 경우를 대상으로 하고 있다. 실제 협업을 하다보면 수 십~수 백 개의 커밋이 오갈 수 있고, 커밋을 이전 상태로 돌리거나 병합 충돌 등의 경우를 해결해야 할 경우가 분명.. 발생할 것이다. 이는 구글링으로 해결 해보는걸로~
 
-[다음](https://seongjaemoon.github.io/2018/01/08/gitPrinciple3/)은 Github 워크 플로우에 대해  마무리 해보는걸로~
+[다음](https://seongjaemoon.github.io/git/2018/01/08/gitPrinciple3.html)은 Github 워크 플로우에 대해  마무리 해보는걸로~
 
 * 오타나 잘못된 부분을 지적해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * [Git Fork에서 Pull Request까지](https://medium.com/axisj/github-fork-%EC%97%90%EC%84%9C-pull-request-%EA%B9%8C%EC%A7%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-merge-a22bdd097283)

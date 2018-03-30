@@ -165,9 +165,9 @@ private static int countParing(boolean taken[]) {
 
 이 문제에서 가장 많은 답을 가질 수 있는 입력은 열 명의 학생이 모두 서로 친구인 경우라고 할 수 있다. 이때 가장 번호가 빠른 학생이 선택할 수 있는 짝은 아홉 명이고, 그 다음 학생이 선택할 수 있는 짝은 일곱 명이다. 이와 같이 나가면 최종 답의 개수는 9x7x5x4x3x1 = 945가 된다.
 
-이렇게 해서 간단하게 Picnic에 대해 알아보았다. [보글 게임](https://seongjaemoon.github.io/2018/01/27/algorithmBoggleGame/)과 마찬가지로 책에선 난이도가 '하'로 적혀있는 완전탐색 관련 알고리즘 문제이다. 하..후..
+이렇게 해서 간단하게 Picnic에 대해 알아보았다. [보글 게임](https://seongjaemoon.github.io/algorithm/2018/01/27/algorithmBoggleGame.html)과 마찬가지로 책에선 난이도가 '하'로 적혀있는 완전탐색 관련 알고리즘 문제이다. 하..후..
 
-계속해서 다음은 [게임판 덮기](https://seongjaemoon.github.io/2018/02/18/algorithmBoardCover/)문제 풀이 및 완전 탐색 관련 알고리즘을 마무리 하는 걸로~
+계속해서 다음은 [게임판 덮기](https://seongjaemoon.github.io/algorithm/2018/02/18/algorithmBoardCover.html)문제 풀이 및 완전 탐색 관련 알고리즘을 마무리 하는 걸로~
 
 * 오타나 잘못된 부분을 지적 해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * 참고문헌<br>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "알고리즘 문제 해결 전략"
+title:  "알고리즘 문제 해결 전략.(구종만 저)"
 date:   2018-01-06 23:00:00
 author: Seongjae Moon
 categories: Book

@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle 조인 쿼리 및 스키마 정리"
 date:   2018-01-14 23:00:00
 author: Seongjae Moon
-categories: DB
+categories: Database
 tags:   Oracle 오라클 조인 스키마 쿼리
 ---
 
-[지난 포스팅](https://seongjaemoon.github.io/2018/01/14/database-oracle2/)에 이어 조인과 스키마에 대해 간단하게 알아보자. 우선 조인은 결합 구문으로,  DB 내의 여러 테이블의 공통 값(PK-FK 관계)을 통해 둘 이상의 테이블에서 데이터를 검색할 수 있게 해준다.
+[지난 포스팅](https://seongjaemoon.github.io/database/2018/01/14/database-oracle2.html)에 이어 조인과 스키마에 대해 간단하게 알아보자. 우선 조인은 결합 구문으로,  DB 내의 여러 테이블의 공통 값(PK-FK 관계)을 통해 둘 이상의 테이블에서 데이터를 검색할 수 있게 해준다.
 
 조인은 서브 쿼리와 같은 결과를 반환할 수 있으며, 조인으로 해결 가능한 경우라면 성능면에서 조인이 더 낫다고 한다.
 
@@ -101,7 +101,7 @@ DB에서 Schema(스키마)란 말 그대로 구조를 나타낸다. 관계형 �
 
 이렇게, 조인 쿼리문과 스키마에 대해 간단하게 알아보았다.  스키마같은 경우엔 외부, 개념, 내부 스키마 등으로 나뉘어지는데, 이는 바라보는 관점에 따라 달라지게 된다. ~~오늘은 귀찮으니 이만...~~ DB는 역시 공부할게 차고 넘친다. 헿.  
 
-[다음](https://seongjaemoon.github.io/2018/02/03/database-oracle4/) 포스팅에선 제약 조건 및 DDL, DML, DCL 등에 대해 심도있게 알아보는 걸로~
+[다음](https://seongjaemoon.github.io/database/2018/02/03/database-oracle4.html) 포스팅에선 제약 조건 및 DDL, DML, DCL 등에 대해 심도있게 알아보는 걸로~
 
 * 오타나 잘못된 부분을 지적해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * 참고문헌<br>

@@ -8,7 +8,7 @@ tags:   Git Github 명령어
 ---
 
 Git은 분산 버전 관리 시스템으로, 리누스 토르발스가 리눅스 커널을 관리하기 위해 개발하였다. Git을 만드는 2주간의 기간이 제일 행복했다는 후문이 있다... ~~레알 Geek스럽다.~~ 이러한 Git을 사용하는 프로젝트를 지원하는 웹 호스팅 서비스 중에 Github ~~이 곳은 코더들의 성지~~와 관련해서 포스팅을 하고자 한다.
- 
+
 ### 1. 일단 Git 설치를 하자.
 
 아래 주소에 접속해서 OS에 맞는 Git을 설치한다.
@@ -19,8 +19,8 @@ Git은 분산 버전 관리 시스템으로, 리누스 토르발스가 리눅스
 아래 주소에 접속해서 가입을 한다.
 [Git 사이트](https://github.com/)
 
-![새로운 Repsitories 만들기 1](/assets/uploads/GitNewBtn.jpg) 
-Repsitories 탭에서 위와 같이 생긴 New버튼을 클릭한다. 
+![새로운 Repsitories 만들기 1](/assets/uploads/GitNewBtn.jpg)
+Repsitories 탭에서 위와 같이 생긴 New버튼을 클릭한다.
 ![새로운 Repsitories 만들기 2](/assets/uploads/GitCreateRepo.jpg)
 New 버튼을 클릭하면 위와 같은 창이 보이게 된다. Repository name 부분에 저장소 이름을 등록하고, Description 부분과 README 부분은 만들어질 저장소의 설명을 다는 부분이다. 나중에 적어도 되므로 안 적어도 그만이다. Public은 전체 공개 프로젝트이고, Private은 비공개 프로젝트이다. ~~쉽게 말해 무료, 유료~~ 적절하게 작성 후 Create repository를 클릭하면 새로운 repository가 생성된다.
 
@@ -28,10 +28,10 @@ New 버튼을 클릭하면 위와 같은 창이 보이게 된다. Repository nam
 
 Github 페이지와 내 컴퓨터에 저장된 폴더를 연동하기 전에 Git 시스템에 대해 간단하게 정리를 하고자 한다.
 
-### Git은 원격 저장소와 로컬 저장소 두 종류의 저장소를 제공한다. 
+### Git은 원격 저장소와 로컬 저장소 두 종류의 저장소를 제공한다.
 > 원격 저장소(Remote Repository): 파일이 원격 저장소 전용 서버에서 관리되며 여러 사람이 함께 공유하기 위한 저장소이다.
 
-> 로컬 저장소(Local Repository): 내 PC에 파일이 저장되는 개인 전용 저장소이다. 
+> 로컬 저장소(Local Repository): 내 PC에 파일이 저장되는 개인 전용 저장소이다.
 
 **이 때, 아예 저장소를 새로 만들거나, 이미 만들어져 있는 원격 저장소를 로컬 저장소로 복사해 올 수 있다.**
 
@@ -49,16 +49,16 @@ git을 효율적으로 사용하기 위해 활용할 수 있는 명령어가 굉
 ### 원격 저장소 풀하기(Pull)
 원격 저장소를 공유해 여러 사람이 함께 작업을 하면, 모두가 같은 원격 저장소에 푸시(Push)한다. 다른 사람이 원격 저장소에 올려 놓은(Push) 변경 내용을 **내 로컬 저장소에 적용(Pull)**할 필요가 있다. 한 마디로, 공동 작업 중이거나 다른 PC에서 작업한 내용을 업로드 하고 싶을 때 사용한다.
 
-#### 위에서 개념을 간단히 알아 보았다면, 실제 어떤 식으로 git bash를 사용할 수 있는지 정리가 필요하다. 
+#### 위에서 개념을 간단히 알아 보았다면, 실제 어떤 식으로 git bash를 사용할 수 있는지 정리가 필요하다.
 
 ##### 1. Git bash 사용 전 선행 사항 및 사용할 로컬 Repository(폴더) 설정
 원격저장소와 연결하기 전에 개인 경험상 우선 SSH키를 생성해두는 편이 좋다. 나중에 SSH키를 통해서 야매?로 할 수 있는 일이 많아진다.
 
 우선 git bash를 연다. 아래 명령어를 입력한다. (Git bash 상에선 ctr+v 대신 shift+ins로 붙여넣기 한다.)
 ```bash
-$ ls -al ~/.ssh 
+$ ls -al ~/.ssh
 ```
-![새로운 SSH키 생성1](/assets/uploads/gitBashSSH.jpg) 
+![새로운 SSH키 생성1](/assets/uploads/gitBashSSH.jpg)
 위 명령어를 입력하고 위와같은 출력 값이 없다면, 새로 만들어야 한다. (ex. id_rsa.pub)
 키 생성을 위해 아래 명령어를 입력한다. email은 본인의 github 주소!
 ```bash
@@ -80,7 +80,7 @@ $ clip < ~/.ssh//id_rsa.pub
 ```
 위 단계까지 정상적으로 끝났다면, 자신의 github 홈페이지에 접속하여, Settings > SSH and GPG keys > New SSH key를 선택한다.
 ![새로운 SSH키 생성2](/assets/uploads/githubSetting.jpg)  
-![새로운 SSH키 생성3](/assets/uploads/githubSSH.jpg) 
+![새로운 SSH키 생성3](/assets/uploads/githubSSH.jpg)
 위 bash에서 클립보드에 복사한 내용을 key에 집어 넣는다.
 ![새로운 SSH키 생성4](/assets/uploads/gitSSHkey.jpg)
 ##### 2. Git bash 명령어 사용
@@ -136,9 +136,9 @@ $ git push origin master //깃허브로 푸시한다. (실제 github 원격 저�
 
 위 그림에서 다운로드 버튼을 클릭한 후 url만 복사한 후, 내가 원하는 저장소에서 마우스 우클릭을 통해 git bash를 실행시킨다. clone 명령어를 이용하면 끝!
 ```bash
-$ git clone https://github.com/any_name/any_repo.git 
+$ git clone https://github.com/any_name/any_repo.git
 ```
-특정 브랜치(Branch)의 내용만 clone하고 싶을 땐, 아래 형식으로 특정 브랜치만 클론 가능하다. 브랜치에 대한 더 자세한 설명은 다음 포스팅에서 확인할 수 있다. 
+특정 브랜치(Branch)의 내용만 clone하고 싶을 땐, 아래 형식으로 특정 브랜치만 클론 가능하다. 브랜치에 대한 더 자세한 설명은 다음 포스팅에서 확인할 수 있다.
 ```bash
 $ git clone -b 브랜치명 --single-branch your_url
 ```
@@ -153,10 +153,10 @@ choose your files를 선택하여 직접 파일을 업로드하거나 폴더를 
 ![저장소 업로드 마침](/assets/uploads/gitUploadFinally.jpg)
 아주 잘 되는 것을 확인할 수 있다. 얄루! :)
 
-이로써, github와 git bash 사용법에 대해 간단하게? 알아보았다. 단순한 작업임에도 명령어가 너무 많다... 저장소 생성 -> add -> commit -> push를 기본으로 하는 것을 알 수 있다. 하지만 역시나 언제나 삼천세계에 빠질 우려가 있기 때문에 필요할 때 마다 스택오버플로우나 github document를 읽어가면서 실행해야 함을 알 수 있다. 
+이로써, github와 git bash 사용법에 대해 간단하게? 알아보았다. 단순한 작업임에도 명령어가 너무 많다... 저장소 생성 -> add -> commit -> push를 기본으로 하는 것을 알 수 있다. 하지만 역시나 언제나 삼천세계에 빠질 우려가 있기 때문에 필요할 때 마다 스택오버플로우나 github document를 읽어가면서 실행해야 함을 알 수 있다.
 
-[다음](https://seongjaemoon.github.io/2017/12/09/gitPrinciple2/)은 Git의 가장 큰 매력인 branch, pull, merge 및 기타 기능들에 대해 심도있게 살펴 보는걸로~
-  
+[다음](https://seongjaemoon.github.io/git/2017/12/09/gitPrinciple2.html)은 Git의 가장 큰 매력인 branch, pull, merge 및 기타 기능들에 대해 심도있게 살펴 보는걸로~
+
 * 오타나 잘못된 부분을 지적해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * [누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_1.html)
 * [Read the Guide](https://guides.github.com/activities/hello-world/)

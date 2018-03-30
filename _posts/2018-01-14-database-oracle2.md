@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle 내장 함수 정리2"
 date:   2018-01-14 23:00:00
 author: Seongjae Moon
-categories: DB
+categories: Database
 tags:   Oracle 오라클 함수
 ---
 
-[저번 포스팅](https://seongjaemoon.github.io/2018/01/09/database-oracle1/)에서 오라클 DB의 내장 함수에 대해 간단하게 알아보았다. 하지만, 오라클에선 더 많은 내장 함수를 제공한다. 아직 갈 길이 멀다는 것을 알 수 있다...
+[저번 포스팅](https://seongjaemoon.github.io/database/2018/01/09/database-oracle1.html)에서 오라클 DB의 내장 함수에 대해 간단하게 알아보았다. 하지만, 오라클에선 더 많은 내장 함수를 제공한다. 아직 갈 길이 멀다는 것을 알 수 있다...
 
 이번 포스팅에선 오라클에서 제공하는 분석함수와 서브 쿼리에 대해 정리해보자.
 
@@ -219,7 +219,7 @@ FROM table_list 별칭;
 
 간단하게? 오라클 내장 분석 함수 및 서브쿼리에 형식에 대해 정리해보았다. 조인(Join)만으로도 해결 가능한 경우가 많다고 하나, 분명 조인만으로는 특정 테이블의 값을 가져오는게 어려울 수 있다. 내장 함수와 적절한 서브쿼리를 잘 콜라보해서 값을 뽑아올 수 있도록, 쿼리문 날리는 연습을 많이 해야겠다. (**역시 연습만이 살 길 헿!**)
 
-[다음](https://seongjaemoon.github.io/2018/01/27/database-oracle3/) 포스팅에선 RDB의 꽃 중 꽃인 '조인'과 테이블 '스키마'(Scheme)에 대해 알아보는 걸로~
+[다음](https://seongjaemoon.github.io/database/2018/01/27/database-oracle3.html) 포스팅에선 RDB의 꽃 중 꽃인 '조인'과 테이블 '스키마'(Scheme)에 대해 알아보는 걸로~
 
 * 오타나 잘못된 부분을 지적해주시면 감사히 생각하고 수정토록 하겠습니다 :)
 * 참고문헌<br>

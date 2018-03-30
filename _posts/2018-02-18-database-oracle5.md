@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle 뷰"
 date:   2018-02-18 23:00:00
 author: Seongjae Moon
-categories: DB
+categories: Database
 tags:   Oracle 오라클 뷰 쿼리
 ---
 
-끝나지 않을 것만 같던 설 연휴가 끝나버렸다. 설 연휴의 끝은 역시 블로그 포스팅! [저번 포스팅](https://seongjaemoon.github.io/2018/02/03/database-oracle4/)에 이어서 오라클 뷰(VIEW)에 대해 정리를 해보자.
+끝나지 않을 것만 같던 설 연휴가 끝나버렸다. 설 연휴의 끝은 역시 블로그 포스팅! [저번 포스팅](https://seongjaemoon.github.io/database/2018/02/03/database-oracle4.html)에 이어서 오라클 뷰(VIEW)에 대해 정리를 해보자.
 ### 먼저, 뷰에 대해서 알아보자.
 뷰란 이미 특정한 데이터베이스 내에 존재하는 하나 이상의 테이블에서 사용자가 얻기 원하는 데이터들만을 정확하고 편하게 가져오기 위하여 사전에 원하는 컬럼들 만을 모아서 만들어 놓은 가상의 테이블로, **편리성 및 보안에 목적**이 있다.
 
