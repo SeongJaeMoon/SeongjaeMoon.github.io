@@ -293,7 +293,7 @@ a = random.sample(range(1, 10), 5) # 랜덤한 리스트 컬렉션 만들기, �
 # 파이썬은 메인 함수가 존재하지 않아도 바로 스크립트를 실행할 수 있다.
 print(a)
 
-def bubbleSort(a):
+def bubble_sort(a):
     l = len(a)
     for i in range(1, l):
         for j in range(l-1):
@@ -301,7 +301,7 @@ def bubbleSort(a):
                 a[j], a[j+1] = a[j+1], a[j]
 
 
-bubbleSort(a) # 함수와 관련된 자세한 내용은 다음 포스팅에서!
+bubble_sort(a) # 함수와 관련된 자세한 내용은 다음 포스팅에서!
 
 print(a)
 """

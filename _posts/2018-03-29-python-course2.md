@@ -293,6 +293,7 @@ def gen(): # gen 함수 정의 및 yield 키워드를 통해 Generator 함수로
 
 g = gen() # generator 객체를 변수에 할당 가능
 print(next(g)) # 1
+
 for i in g:
     print(i, end='') # 2345
 
@@ -306,6 +307,7 @@ for i in g:
 def sum(a, b): # def 함수명(파라미터)
   return a + b # 반환값
 
+
 print(sum(3, 5)) # 8
 ```
 ## Default parameter
@@ -314,37 +316,41 @@ print(sum(3, 5)) # 8
 def defaultSum(a, b, default = 1):
   return a + b + default
 
+
 print(sum(1, 2)) # 4
 ```
 ## Variable-length parameter
 파이썬에서 함수의 파라미터를 넘겨받을 때, 파라미터의 갯 수가 정해져 있지 않을 수 있다. 그럴 땐 자바에서 "변수명..." 를 이용해 가변 파라미터를 사용하듯이, 파이썬에선 에스터 리스크* 기호를 이용해 가변 길이 파라미터를 선언할 수 있다.
 ```python
-def vlSum(fl, *number):
+def vl_sum(fl, *number):
   sum = 0
   for i in number:
     sum += i
   return sum + fl
 
-print(vlSum(1.0, 1, 2, 3, 4, 5)) # 11.0
+
+print(vl_sum(1.0, 1, 2, 3, 4, 5)) # 16.0
 ```
 ## Named parameter
 파이썬에서는 이름 있는 파라미터라는 것이 존재 한다. 사용법은 함수에서 사용한 "인자명 = 값" 형식으로 함수에 파라미터를 넘겨줄 수 있다. 가독성 있고 직관적인 코드를 작성할 수 있는 장점이 있다. 실제 코드를 보면 바로 이해할 수 있다.
 ```python
-def namedSum(one = 1, two = 2, three = 3):
+def named_sum(one = 1, two = 2, three = 3):
   return one + two + three
 
-print(namedSum(one = 1, two = 2, three = 3)) # 6
+
+print(named_sum(one = 1, two = 2, three = 3)) # 6
 ```
 ## Return type
 파이썬에서는 하나의 함수에 여러 반환 값이 존재할 수 있다. 실제로는 하나의 튜플을 반환하는 것이지만, 파이썬 튜플의 특성을 이용해 하나의 함수에서 동작한 여러 작업에 대한 반환 값을 여러개 가지게 할 때 사용하면 유용하다.
 ```python
-def returnSum(*number):
+def return_sum(*number):
   sum = 0
   for i in number:
     sum += i
   return sum, len(number)
 
-print(returnSum(1, 2, 3, 4, 5)) # (15, 5)
+
+print(return_sum(1, 2, 3, 4, 5)) # (15, 5)
 ```
 
 이상으로 간단하게? 파이썬의 컬렉션과 함수에 대해 정리했다. 내용이 부족한 면이 있지만, 파이썬이라는 프로그래밍 언어의 다양한 여러 내용을 압축해서 정리한 것이므로 더 자세한 내용은 실제 코드를 작성하면서 응용해보는 걸로~ 다음은 파이썬 패키지 관리자와 라이브러리에 대해 알아보는 걸로!
