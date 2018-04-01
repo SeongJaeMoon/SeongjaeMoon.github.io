@@ -321,7 +321,7 @@ print(sum(1, 2)) # 4
 ```python
 def vlSum(fl, *number):
   sum = 0
-  for i in range(len(number)):
+  for i in number:
     sum += i
   return sum + fl
 
@@ -340,11 +340,11 @@ print(namedSum(one = 1, two = 2, three = 3)) # 6
 ```python
 def returnSum(*number):
   sum = 0
-  for i in range(len(number)):
+  for i in number:
     sum += i
   return sum, len(number)
 
-print(returnSum(1, 2, 3, 4, 5)) # (10, 5)
+print(returnSum(1, 2, 3, 4, 5)) # (15, 5)
 ```
 
 이상으로 간단하게? 파이썬의 컬렉션과 함수에 대해 정리했다. 내용이 부족한 면이 있지만, 파이썬이라는 프로그래밍 언어의 다양한 여러 내용을 압축해서 정리한 것이므로 더 자세한 내용은 실제 코드를 작성하면서 응용해보는 걸로~ 다음은 파이썬 패키지 관리자와 라이브러리에 대해 알아보는 걸로!
