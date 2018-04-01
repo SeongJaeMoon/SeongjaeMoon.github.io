@@ -191,10 +191,10 @@ print(a["age"]) # 26
 딕셔너리는 변수명[키]을 통해 값에 접근하고, 해당 키값에 값을 할당하거나 새로운 키 값에 값을 할당하여 값을 추가할 수 있다. 리스트와 마찬가지로 del 키워드를 통해 해당 키에 해당하는 키, 값을 삭제할 수 있다. 또한 앞서 살펴본 반복문과 in 연산자를 통해 반환 받은 키를 통해 값에 접근할 수 있다.
 ```python
 py = {"Life": 1, "is": 2, "too": 3}
-py["seong"] = 4 # 수정
+py["too"] = 4 # 수정
 py["short"] = 5 # 추가
 del py["Life"] # 삭제
-print(py) # 'is': 2, 'too': 3, 'seong': 4, 'short': 5
+print(py) # 'is': 2, 'too': 4, 'short': 5
 
 a = {"a": 1, "b": 2, "c": 3}
 for key in a:
@@ -207,12 +207,12 @@ a = {"a": 1, "b": 2, "c": 3}
 # keys
 keys = a.keys()
 for k in keys:
-    print(k, end='') #abc
+    print(k, end='') # abc
 
 # values
 values = a.values()
 for v in values:
-    print(v, end='') #123
+    print(v, end='') # 123
  ```
 딕셔너리에 키를 통해 값을 접근할 때, 변수명[키] 형식으로 접근할 경우 값이 없을 때는 에러가 발생할 수 있다. 하지만, 딕셔너리 클래스의 get 메서드를 이용하면 에러가 아닌 None 타입을 반환받을 수 있다.
 ```python
