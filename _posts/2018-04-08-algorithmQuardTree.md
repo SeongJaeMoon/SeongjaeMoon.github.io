@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "쿼드 트리 뒤집기 문제"
-date:  2018-03-11 23:00:00
+date:  2018-04-07 23:00:00
 author: Seongjae Moon
 categories: Algorithm
 tags:   분할정복 알고리즘 Java 쿼드트리뒤집기
