@@ -6,7 +6,8 @@ author: Seongjae Moon
 categories: Python
 tags:   Python 파이썬 패키지 pip 라이브러리  Atom Java
 ---
-[저번 포스팅](https://seongjaemoon.github.io/python/2018/04/05/python-course3.html)에 이어서 파이썬 기초부터 웹 크롤러 개발 네 번째 포스팅을 진행해보자. 이번 포스팅에선 파이썬의 패키지와 크롤러 개발 및 데이터 분석을 위한 라이브러리 설치에 대한 내용을 간단하게 알아보자. 테스트 코딩용 파이썬 에디터는 [Atom](https://atom.io/)과 script 패키지를 이용해서 작성하였고, [Python 3.6.4](https://www.python.org/downloads/) 버전을 사용했다. Java 코드 테스트는 마찬가지로 [Atom](https://atom.io/)과 JDK 8 환경에서 코딩되었다.
+
+[저번 포스팅](https://seongjaemoon.github.io/python/2018/04/06/python-course3.html)에 이어서 파이썬 기초부터 웹 크롤러 개발 네 번째 포스팅을 진행해보자. 이번 포스팅에선 파이썬의 패키지와 크롤러 개발 및 데이터 분석을 위한 라이브러리 설치에 대한 내용을 간단하게 알아보자. 테스트 코딩용 파이썬 에디터는 [Atom](https://atom.io/)과 script 패키지를 이용해서 작성하였고, [Python 3.6.4](https://www.python.org/downloads/) 버전을 사용했다. Java 코드 테스트는 마찬가지로 [Atom](https://atom.io/)과 JDK 8 환경에서 코딩되었다.
 
 # 파이썬 패키지 구조
 파이썬에서 모듈은 하나의 .py 파일을 가리키며, 패키지는 이러한 모듈들을 모은 컬렉션을 가리킨다. 파이썬의 패키지는 하나의 디렉토리에 놓여진 모듈들의 집합을 가리키는데, 그 디렉토리에는 일반적으로 &#95;&#95;init&#95;&#95;.py 라는 패키지 초기화 파일이 존재한다. (Python 3.3 이후부터는 init 파일이 없어도 패키지로 인식이 가능하다)
