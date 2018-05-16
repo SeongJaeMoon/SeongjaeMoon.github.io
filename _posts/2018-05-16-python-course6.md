@@ -7,7 +7,7 @@ categories: Python
 tags:   Python 파이썬 HTML Scraping Crawling VisualStudioCode Selenium Instargram Twitter HashTag MySQL
 ---
 
-[저번 포스팅](https://seongjaemoon.github.io/python/2018/04/21/python-course5.html)에 이어서 파이썬 기초부터 웹 크롤러 개발 여섯 번째 포스팅을 진행해보자. 이번 포스팅에선 Selenium 라이브러리를 이용해 크롬 브라우저 조작을 통한 특정 웹 페이지에 데이터를 크롤링하고 MySQL DB에 저장하는 부분을 정리해보자. 테스트 코딩용 파이썬 에디터는 [Visual Studio Code](https://code.visualstudio.com/)를 이용해서 작성하였고, [Python 3.6.4](https://www.python.org/downloads/) 버전을 사용했다. (파이썬 코드 테스트용 에디터를 아톰에서 VS code로 변경한 이유엔 여러가지가 있지만, 트렌디 함을 따라가는게 역시 가장 중요했다..?)
+[저번 포스팅](https://seongjaemoon.github.io/python/2018/04/21/python-course5.html)에 이어서 파이썬 기초부터 웹 크롤러 개발 여섯 번째 포스팅을 진행해보자. 이번 포스팅에선 Selenium 라이브러리를 이용해 크롬 브라우저 조작을 통한 특정 웹 페이지의 데이터를 크롤링하고, MySQL DB에 저장하는 부분을 정리해보자. 테스트 코딩용 파이썬 에디터는 [Visual Studio Code](https://code.visualstudio.com/)를 이용해서 작성하였고, [Python 3.6.4](https://www.python.org/downloads/) 버전을 사용했다. (파이썬 코드 테스트용 에디터를 아톰에서 VS code로 변경한 이유엔 여러가지가 있지만, 트렌디 함을 따라가는게 역시 가장 중요했다..?)
 
 주의) 공격적이고 무분별한 크롤링과 악의적인 이유의 크롤링은 무조건적으로 **지양**되어야 합니다.
 
