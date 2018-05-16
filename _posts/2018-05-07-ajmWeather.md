@@ -41,7 +41,7 @@ dependencies {
 	    implementation 'com.github.code-crusher:EasyWeather:v1.2'
 	}
 ```
-참고로 안전모에서 프로젝트 자체를 다운로드하여 import 하는 방식을 취하고 있다. 만약 이와 같은 방법으로 프로젝트를 추가하고 싶다면, 루트 폴더에 프로젝트를 import 하고 아래와 같이 코드를 작성하면 된다.  
+참고로 안전모에선 프로젝트 자체를 다운로드하여 import 하는 방식을 취하고 있다. 만약, 이와 같은 방법으로 프로젝트를 추가하고 싶다면 루트 폴더에 프로젝트를 import 하고 아래와 같이 코드를 작성하면 된다.  
 ```
 dependencies {
             ...
