@@ -9,7 +9,7 @@ tags:   Python 파이썬 HTML Scraping Crawling Atom
 
 [저번 포스팅](https://seongjaemoon.github.io/python/2018/04/06/python-course4.html)에 이어서 파이썬 기초부터 웹 크롤러 개발 다섯 번째 포스팅을 진행해보자. 이번 포스팅에선 HTML 기초 문법 및 크롤링을 위한 HTML 분석 방법에 대해 알아보고, 라이브러리를 이용한 실제 테스트 크롤링 코드 작성에 대해 정리해보자. 테스트 코딩용 파이썬 에디터는 [Atom](https://atom.io/)과 script 패키지를 이용해서 작성하였고, [Python 3.6.4](https://www.python.org/downloads/) 버전을 사용했다.
 
-# HTML과 구글 개발자 도구.
+# HTML과 크롬 개발자 도구.
 우선 HTML에 대해서 알아보자. HTML은 마크업 언어로서, **이미 정해진 문법으로 코드를 작성하면 웹에 그 내용이 보여지게 되는 웹 언어** 라고 할 수 있다. 참고로 Github pages는 마크다운 문법으로 글이 작성되는데, 마크다운은 간단히 말해 이러한 마크업 언어를 조금 더 쓰기 쉽게 만든 언어라고 할 수 있다. 때문에 글을 작성할 때 HTML 문법을 이용해 작성해도 잘 적용되는 것을 확인할 수 있다. 아무튼, 이벤트 처리를 담당하는 javascript나 jquery 등의 내용은 여기서 필요하지 않으니 다음 기회에 다루는 것으로 하고, HTML 문법에 대해 알아보자. (크롤링을 위한 다양한 정보는 크롬 브라우저를 이용해 분석하게 될테니 먼저 크롬을 [다운로드](https://www.google.co.kr/chrome/index.html)한다.)
 
 일단 아래와 같은 간단한 html 확장자를 가진 파일이 있다고 가정해보자. id 속성이 board인 div 태그와 class 속성이 table인 table 태그로 구성되어 있는 것을 확인할 수 있다.

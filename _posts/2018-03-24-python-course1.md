@@ -204,7 +204,7 @@ print(string1+string2) # 문자열문자열
 print(string1*2) #문자열문자열
 ```
 
-문자열과 관련된 함수는 굉장히 다양한데 Java 언어에서 표준 라이브러리로 지원하지 않는 함수도 상당수 존재한다. 문자열과 관련된 함수에 자세한 내용은 [문자열 포스팅](https://seongjaemoon.github.io/2017/12/05/pythonStringFormat/)을 참고.
+문자열과 관련된 함수는 굉장히 다양한데 Java 언어에서 표준 라이브러리로 지원하지 않는 함수도 상당수 존재한다. 문자열과 관련된 함수에 자세한 내용은 [문자열 포스팅](https://seongjaemoon.github.io/python/2017/12/05/pythonStringFormat.html)을 참고.
 
 ### 조건문과 반복문
 #### 조건문 (if, elif, else, pass)
