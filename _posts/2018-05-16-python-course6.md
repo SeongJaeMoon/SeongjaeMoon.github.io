@@ -76,8 +76,8 @@ url = "https://www.instagram.com/explore/tags/python/"
 # 다운로드 받은 driver 주소
 DRIVER_DIR = '/path/to/chromedriver'
 # 크롬 드라이버를 이용해 임의로 크롬 브라우저를 실행시켜 조작한다.
-driver = webdriver.Chrome(
-# 암묵적으로 웹 자원을 (최대) 5초 기다리기DRIVER_DIR)
+driver = webdriver.Chrome(DRIVER_DIR)
+# 암묵적으로 웹 자원을 (최대) 5초 기다리기
 driver.implicitly_wait(5) 
 # 크롬 브라우저가 실행되며 해당 url로 이동한다.
 driver.get(url)
@@ -99,7 +99,7 @@ while pagedowns < 20:
         # 페이지 스크롤 타이밍을 맞추기 위해 sleep
         time.sleep(1)
         # 브라우저에 보이는 모든 img 태그를 css 선택자 문법으로 찾는다.
-        img = driver.find_elements_by_css_selector('div._4rbun > img')
+        img = driver.find_elements_by_css_selector('div.KL4Bh > img')
         # 위에서 선언한 alt_list 리스트에 alt 속성의 값을 중복을 방지하며 할당한다.
         for i in img:
             if not i.get_attribute('alt') in alt_list:
