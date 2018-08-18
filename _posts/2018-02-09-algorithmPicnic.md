@@ -23,7 +23,7 @@ tags:   Picnic Java 완전탐색 재귀호출 알고리즘
 
 - 문제의 전제 조건은 다음과 같다.
 각 학생들의 쌍에 대해 이들이 서로 친구인지 여부가 주어질 때, 학생들을 짝 지을 수 있는 방법의 수를 계산하는 프로그램을 작성한다. 단, 짝이 되는 학생의 일부만 다르더라도 다른 방법으로 본다.
-예를 들어, (쯔위, 채영), (성재, 모모), (정연, 미나) < - > (쯔위, 채영), (상제, 다현), (정연, 모모)는 다른 방법이다.
+예를 들어, (쯔위, 채영), (성재, 모모), (정연, 미나) < - > (쯔위, 채영), (성재, 다현), (정연, 모모)는 다른 방법이다.
 - 시간 및 메로리 제한
 프로그램은 1초 내에 실행 되어야 하고, 64MB 이하의 메모리만 사용해야 한다.
 - 입력
@@ -75,13 +75,13 @@ public static void main(String[] args) {
 				System.out.println("서로 친구인 학생 입력?(0<=m<=n-1:)");
 				int friends1 = sc.nextInt();
 				int friends2 = sc.nextInt();
-				//(모모, 성재), (모모, 성재)는 같은 경우이므로, 둘 다 true로 선언.
+				//(모모, 성재), (성재, 모모)는 같은 경우이므로, 둘 다 true로 선언.
 				areFriends[friends1][friends2] = areFriends[friends2][friends1] = true;
 			}
 			//경우의 수 계산하여 결과를 보여줄 배열에 할당한다.
 			result[i] = countParing(taken);
 		}
-		//테스트 케이스 수만큼 반복
+		//테스트 케이스 수 만큼 반복
 		for(int i = 0; i < result.length; ++i) {
 			//결과 출력
 			System.out.println("결과 : " + result[i]);
