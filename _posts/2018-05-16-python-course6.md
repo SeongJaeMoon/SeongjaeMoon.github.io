@@ -37,13 +37,13 @@ pip3 install konlpy
 
 일반적으로 웹 상에 나타나는 모든 정보는 크롤링이 가능하다고 보면 된다. 여기서 우리는 많은 데이터 중 전체 게시물 수와 가장 많이 나온 상위 15개의 해시태그에 대한 정보만을 추출한다고 가정 하자.
 
-먼저, 총 게시물 수는 _fd86t를 클래스 속성 값으로 갖는 span 태그의 값임을 확인할 수 있다. 다음으로, 해시태그에 대한 정보를 가져오는 방법은 여러가지가 있을 수 있지만, _4rbun를 클래스 속성 값으로 갖는 div 태그 자식 중 img 태그의 alt 속성의 값이 작성자의 글과 해시태그 목록을 가지고 있는 것을 확인할 수 있다. 이 것을 각각 CSS 선택자 문법으로 표현하면 아래와 같다.
+먼저, 총 게시물 수는 _fd86t를 클래스 속성 값으로 갖는 span 태그의 값임을 확인할 수 있다. 다음으로, 해시태그에 대한 정보를 가져오는 방법은 여러가지가 있을 수 있지만, KL4Bh를 클래스 속성 값으로 갖는 div 태그 자식 중 img 태그의 alt 속성의 값이 작성자의 글과 해시태그 목록을 가지고 있는 것을 확인할 수 있다. 이 것을 각각 CSS 선택자 문법으로 표현하면 아래와 같다.
 
 ```
 /* span 태그 찾기 */
 span._fd86t 
 /* img 태그 찾기 */
-div._4rbun > img
+div.KL4Bh > img
 ```
 
 이제 위와 같은 기본 정보를 가지고 파이썬 코드를 작성해보자.
@@ -100,11 +100,13 @@ while pagedowns < 20:
         time.sleep(1)
         # 브라우저에 보이는 모든 img 태그를 css 선택자 문법으로 찾는다.
         img = driver.find_elements_by_css_selector('div.KL4Bh > img')
-        # 위에서 선언한 alt_list 리스트에 alt 속성의 값을 중복을 방지하며 할당한다.
+        # 위에서 선언한 alt_list 리스트에 alt 속성의 값을 할당한다.
         for i in img:
-            if not i.get_attribute('alt') in alt_list:
-                alt_list.append(i.get_attribute('alt'))
+            alt_list.append(i.get_attribute('alt'))
         pagedowns += 1
+
+# 값의 중복을 방지를 리스트 set으로 변환후 리스트로 재할당
+alt_list = list(set(alt_list))
 
 # 키:해시태그, 값:횟수 형식으로 저장하기 위한 빈 딕셔너리 선언
 dict_data = {}
